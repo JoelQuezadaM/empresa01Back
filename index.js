@@ -45,7 +45,6 @@ app.use(cors());
 
 // Servir imágenes públicas
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
 app.use('/api/clientes',clientesRouter)
 app.use('/api/productos',productosRouter)
 app.use('/api/usuarios',usuariosRouter)
