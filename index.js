@@ -60,5 +60,5 @@ app.use('/api/productospag',productosPaginaRoutes)
 const PORT = process.env.PORT
 
 app.listen(PORT, ()=> {
-    console.log(`Servidor funcionando en el puerto ${PORT}`)
+    console.log(`Servidor funcionando en el puerto ${PORT} ok`)
 });
