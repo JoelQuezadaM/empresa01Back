@@ -181,7 +181,11 @@ export const obtenerUsuarios = async (req,res)=>{
         console.log(respuesta)
         res.json(respuesta)
    } catch(error){
-    console.log(error)
+        console.error('Error en obtenerUsuarios:', error);
+        res.status(500).json({
+            msg: 'Error al consultar usuarios. Intenta de nuevo más tarde.',
+            error: error.code || error.message
+        });
    }
 }
 
